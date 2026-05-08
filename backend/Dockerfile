@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN pip install --no-cache-dir flask flask-cors numpy tensorflow keras gunicorn
 
-COPY . .
+COPY backend/ ./
 
 EXPOSE 5000
 
