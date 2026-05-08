@@ -6,7 +6,7 @@ WORKDIR /app
 COPY . .
 
 # Move into frontend folder
-WORKDIR /app/frontend/my-app
+WORKDIR /frontend/my-app
 
 RUN npm install
 RUN npm run build
