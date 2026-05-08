@@ -90,7 +90,7 @@ export default function App() {
 
 
      const buildUrl = (year, quarter, gdp) => {
-       let url = `http://34.143.140.54:5000/api/walmart/predict?year=${year}&quarter=${quarter}&gdp=${gdp}`;
+       let url = `https://backend-business-sales-predictor-669394454391.europe-west1.run.app:5000/api/walmart/predict?year=${year}&quarter=${quarter}&gdp=${gdp}`;
        if (weatherParams) url += '&' + weatherParams;
        return url;
      };
